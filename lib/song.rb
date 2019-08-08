@@ -13,10 +13,16 @@ class Song
     song
   end
 
+<<<<<<< HEAD
   def artist_name= (name_str)
     song_artist = Artist.find_or_create_by_name(name_str)
     @artist = song_artist
     @artist.add_song(self)
+=======
+  def artist_name= (name)
+    self.artist = Artist.find_or_create_by_name(name)
+    self.artist.add_song(self)
+>>>>>>> 861a080e75fa5839010f4ce8cb534f7dcbdb3290
   end
 
 end

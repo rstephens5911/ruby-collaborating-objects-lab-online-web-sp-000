@@ -17,6 +17,13 @@ class Artist
     song.artist = self
     song
   end
+<<<<<<< HEAD
+=======
+
+  #def songs
+    #Song.all.select { |song| song.artist == self }
+  #end
+>>>>>>> 861a080e75fa5839010f4ce8cb534f7dcbdb3290
 
   def self.find_or_create_by_name(name)
      if self.find(name)
